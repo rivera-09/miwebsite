@@ -30,7 +30,7 @@ body {
 .navbar li a:hover {
     background-color: #555;
     color: #fff;
-    border-bottom: 2px solid #007b;
+    border-bottom: 2px solid rgba(245, 236, 241, 0.733);
 }
 
 video {
@@ -47,3 +47,10 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+
+.navbar a:hover {
+    color: #ccc;
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+ 
