@@ -1,0 +1,49 @@
+body {
+    background-image: url(imagen/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li a {
+    display: block;
+    color: pink;
+    text-align: center;
+    padding: 15px 65px;
+    text-decoration: none;
+    transition: backgtound-color 03s;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+    color: #fff;
+    border-bottom: 2px solid #007b;
+}
+
+video {
+   transition: transform 0.5s;
+}
+video:hover{
+    transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
