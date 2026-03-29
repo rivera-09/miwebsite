@@ -1,18 +1,29 @@
 body {
     background-image: url(imagen/fondo.jpeg);
-    background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
 }
+ .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+ }
 
-.navbar ul {
+ .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-emphasis: none;
+ }
+
+ .navbar a {
+    background-color: var(--color-primary-dark);
+ }
+
+ .navbar ul {
     list-style-type: none;
-    background-color: #333;
+    background-color: #49d455;
     padding: 0;
     margin: 0;
     display: flex;
@@ -20,7 +31,7 @@ body {
 
 .navbar li a {
     display: block;
-    color: pink;
+    color: black;
     text-align: center;
     padding: 15px 65px;
     text-decoration: none;
@@ -28,9 +39,9 @@ body {
 }
 
 .navbar li a:hover {
-    background-color: #555;
-    color: #fff;
-    border-bottom: 2px solid rgba(245, 236, 241, 0.733);
+    background-color: rgb(8, 8, 8);
+    color: rgb(15, 252, 252);
+    border-bottom: 2px solid rgb(5, 227, 243);
 }
 
 video {
