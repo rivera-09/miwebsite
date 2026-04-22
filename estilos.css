@@ -8,38 +8,57 @@ body{
 
 .navbar ul {
     list-style: none;
-    background-color: #12ca74;
+    background-color:black;
     padding: 0;
     margin: 0;
-    display: flex;
+    display:flex;
 }
 
 .navbar li a {
-    display: block;
-    color: black;
+    display:block;
+    color: white;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 45px;
     text-decoration: none;
-    transition: backgroun-color 0.3s;
+    transition: backgroun-color 0.;
 }
 .navbar li a:hover {
 background-color: #050505;
-color: #0ab4e7; 
-border-bottom: 2px solid #007ff0;
+color: #0de8dd; 
+border-bottom: 3px solid #0de8dd;
 }
 
 .navbar li {
     display: inline-block;
-    margin-right: 20px;
-    transition: transform 0.2s ease;
+    margin-right: 19px;
+    transition: transform 0.5s ease;
 }
 
 .navbar li:hover {
-    transform: scale(1.2);
+    transform: scale(0.6);
+} 
+
+form{
+    background-color: transparent;
+    border: 50px solid black;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(8, 226, 142, 0.08)
+}
+input  {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    transition: border 0.2s;
 }
 
+input :focus {
+border-color: #4f46e5;
+outline: none}
+input ::placeholder {
+    color:#9ca3af;
+}
 
-
-
-
-
+input::disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+}

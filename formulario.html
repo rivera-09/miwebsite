@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <nav class="formulario">
+    <style>
+        body{
+
+        }
+
+        form{
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                }
+
+                form li + li {
+                    margin-top: 1em;
+                    }
+
+                    label {
+                        display: inline-block;
+                        width: 90px;
+                        text-align: right;
+                         }
+
+                         input, 
+                         textarea {
+                            font: 1em sans-serif;
+
+                             width: 300px;
+                             box-sizing: border-box;
+
+                             border: 1px solid #999;
+                             }
+
+                             input:focus,
+                             textarea:focus {
+                                border- color: #000;
+                                }
+
+                                texttarea {
+                                    vertical-align: top;
+                                    height: 5em;
+                                    }
+
+                                    .button {
+                                        padding-left: 90px;
+                                         }
+
+                                         button {
+                                            margin-left: 0.5em;
+                                            }
+                                            
+    </style>
+
+<title>Mi primer formulario-para e-mail</title>
+</head>
+<link rel="stylesheet">
+<body>
+<nav class="navbar">
+<br>
+ <ul>
+  <li><a href="formulario.html">Formulario</a></li>
+  <li><a href="presentacion.html">Presentacion</a></li>
+  <li><a href="generales.html">Generales</a></li>
+  <li><a href="academicos.html">Academicos</a></li>
+  <li><a href="laborales.html">Laborales</a></li>
+  <li><a href="hobbies.html">Hobbies</a></li>
+  <li><a href="referencias.html">Referencias Personales</a></li>
+ </ul>
+  </nav>
+  <br>
+    <form action="https://formspree.io/f/mzdykzgn"
+    method="post" enctype="multipart/form-data">
+<ul>
+    <li>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name"
+        />
+    </li>
+    <li></li>
+<label for="mail">Correo electrónico:</label>
+<input type="email" id="mail"
+name="user_email" />
+    </li>
+<li>
+    <label for="msg">Mensaje:</label>
+    <textarea id="msg"
+    name="user_message"></textarea>
+</li>
+<input type="submit" value="enviar">
+</ul>
+</form>
+</nav>
+<center>
+<h3><a href="index.html">Regresar al menu</a></h3>
+</center>
+</body>
+</html>
