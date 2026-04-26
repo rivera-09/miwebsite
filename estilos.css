@@ -1,5 +1,7 @@
 body{
     background-color: rgb(21, 209, 146);
+    margin: 0;
+    padding: 20px;
 }
 
 .navbar{
@@ -39,12 +41,12 @@ main{
 }
 
 footer{
-    background-color: #099e9e;
-    color: white;
-    padding: 3rem 1rem;
-    width: 100%;
-    height: 30%;
-    text-align: center;
+  background-color:#099e9e;
+  color:white;
+  padding:2rem 1rem;
+  width:100%;
+  text-align:center;
+  height:auto; /* mejor */
 }
 
 h1{
@@ -64,10 +66,8 @@ h3{
     color: black;
 }
 form{
-    background-color: transparent;
-    border: 50px solid black;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(8, 226, 142, 0.08);
+border:2px solid black;
+padding:20px;
 }
 
 input{
@@ -90,7 +90,6 @@ input :focus{
         cursor: not-allowed;
     }
 
-    /* Hace que todo se adapte mejor */
 *{
   box-sizing: border-box;
 }
@@ -185,5 +184,29 @@ input{
   h1{
     font-size:24px;
   }
+
+}
+
+/* Todo tu CSS arriba */
+
+footer{
+ ...
+}
+
+/* AL FINAL PEGAS ESTO */
+@media (max-width:768px){
+
+ body{
+   padding:10px;
+ }
+
+ form{
+   margin:20px auto;
+   padding:15px;
+ }
+
+ footer{
+   padding:1rem;
+ }
 
 }
