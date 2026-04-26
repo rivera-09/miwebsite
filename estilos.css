@@ -1,64 +1,189 @@
 body{
-    background-image: url(imagen/fondo.jpeg);
-    background-position: center;
-    background-repeat: no repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: rgb(21, 209, 146);
 }
 
-.navbar ul {
-    list-style: none;
-    background-color:black;
-    padding: 0;
-    margin: 0;
-    display:flex;
+.navbar{
+width: fit-content;
+margin:10px auto; 
+background: #057453a0;
+padding:1px 30px;
+border-radius:40px;
 }
 
-.navbar li a {
-    display:block;
-    color: white;
+.navbar ul{
+list-style:none;
+padding:0;
+margin:10px;
+display:flex;
+justify-content:center;
+gap: 0.8rem;
+}
+
+.navbar li{
+margin:10 15px
+
+}
+
+.navbar a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+background-attachment: fixed;
+}
+
+main{
+    background-color: rgb(21, 206, 146);
     text-align: center;
-    padding: 15px 45px;
-    text-decoration: none;
-    transition: backgroun-color 0.;
-}
-.navbar li a:hover {
-background-color: #050505;
-color: #0de8dd; 
-border-bottom: 3px solid #0de8dd;
+    grid-area: main;
+
 }
 
-.navbar li {
-    display: inline-block;
-    margin-right: 19px;
-    transition: transform 0.5s ease;
+footer{
+    background-color: #099e9e;
+    color: white;
+    padding: 3rem 1rem;
+    width: 100%;
+    height: 30%;
+    text-align: center;
 }
 
-.navbar li:hover {
-    transform: scale(0.6);
-} 
+h1{
+    color: rgba(96, 16, 195, 0.67);
+}
 
+h2{
+ color: black;
+ text-align: left;
+}
+
+P{
+    text-align: center;
+}
+
+h3{
+    color: black;
+}
 form{
     background-color: transparent;
     border: 50px solid black;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(8, 226, 142, 0.08)
+    box-shadow: 0 4px 12px rgba(8, 226, 142, 0.08);
 }
-input  {
+
+input{
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: px;
     padding: 10px 12px;
-    transition: border 0.2s;
+    transition: border0.2s;
 }
 
-input :focus {
-border-color: #4f46e5;
-outline: none}
-input ::placeholder {
-    color:#9ca3af;
+input :focus{
+    border-color: #4f46e5;
+    outline: none;
+
+    input ::placeholder{
+    color: 9ca3af;
+    }
+
+    input::disabled{
+        background-color: #f3f4f6;
+        cursor: not-allowed;
+    }
+
+    /* Hace que todo se adapte mejor */
+*{
+  box-sizing: border-box;
 }
 
-input::disabled {
-    background-color: #f3f4f6;
-    cursor: not-allowed;
+body{
+  margin:0;
+  padding:0;
+  background-color: rgb(21, 209, 146);
+}
+
+/* Barra adaptable */
+.navbar{
+  width:90%;
+  max-width:900px;
+  margin:10px auto;
+  background:#057453a0;
+  padding:15px;
+  border-radius:40px;
+}
+
+.navbar ul{
+  list-style:none;
+  padding:0;
+  margin:10px;
+  display:flex;
+  justify-content:center;
+  gap:0.8rem;
+  flex-wrap:wrap; /* permite que bajen los links */
+}
+
+.navbar li{
+  margin:10px 15px;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+/* Formulario adaptable */
+form{
+  width:90%;
+  max-width:600px;
+  margin:auto;
+  background-color:transparent;
+  border:2px solid black; 
+  border-radius:12px;
+  padding:20px;
+}
+
+input{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #ccc;
+  border-radius:8px;
+}
+
+/* RESPONSIVE PARA CELULARES */
+@media (max-width:768px){
+
+  .navbar ul{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  h1{
+    font-size:28px;
+  }
+
+  h2{
+    text-align:center;
+  }
+
+  footer{
+    padding:2rem 1rem;
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width:480px){
+
+  body{
+    font-size:16px;
+  }
+
+  .navbar{
+    width:95%;
+    padding:10px;
+  }
+
+  h1{
+    font-size:24px;
+  }
+
 }
